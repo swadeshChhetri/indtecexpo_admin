@@ -35,7 +35,7 @@ const Auth: React.FC = () => {
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-sm">
         <h2 className="text-center text-2xl font-semibold text-gray-800">
-          Admin Login to <span className="text-blue-600">KonnektGlobe</span>
+          Admin Login to <span className="text-blue-600">INDTECEXPO</span>
         </h2>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
