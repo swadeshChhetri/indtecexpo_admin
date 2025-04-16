@@ -68,7 +68,7 @@ export default function Home() {
   useEffect(() => {
     const fetchChartData = async () => {
       try {
-        const res = await fetch('http://127.0.0.1:8000/api/admin/dashboard-charts', {
+        const res = await fetch('https://tradesfairs.com/indtecexpo/api/admin/dashboard-charts', {
           headers: {
             Accept: 'application/json',
             Authorization: `Bearer ${authToken}`,
@@ -92,7 +92,7 @@ export default function Home() {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-        const res = await fetch('http://127.0.0.1:8000/api/admin/dashboard-summary', {
+        const res = await fetch('https://tradesfairs.com/indtecexpo/api/admin/dashboard-summary', {
           headers: {
             Accept: 'application/json',
             Authorization: `Bearer ${authToken}`,
@@ -116,7 +116,7 @@ export default function Home() {
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        const res = await fetch('http://127.0.0.1:8000/api/admin/recent-activity', {
+        const res = await fetch('https://tradesfairs.com/indtecexpo/api/admin/recent-activity', {
           headers: {
             Accept: 'application/json',
             Authorization: `Bearer ${authToken}`,

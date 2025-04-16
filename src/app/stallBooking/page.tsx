@@ -53,7 +53,7 @@ export default function StallBookingsPage() {
     const fetchUsers = async () => {
       try {
 
-        const res = await fetch('http://127.0.0.1:8000/api/spacebooking', {
+        const res = await fetch('https://tradesfairs.com/indtecexpo/api/spacebooking', {
           headers: {
             Accept: 'application/json',
             Authorization: `Bearer ${authToken}`,
@@ -95,7 +95,7 @@ export default function StallBookingsPage() {
   const updateBookingStatus = async (id: number, newStatus: 'Booked' | 'Rejected' | 'Pending') => {
     try {
       await axios.put(
-        `http://127.0.0.1:8000/api/spacebooking/${id}`,
+        `https://tradesfairs.com/indtecexpo/api/spacebooking/${id}`,
         { status: newStatus },
         {
           headers: {

@@ -27,7 +27,7 @@ export default function VisitorExhibitorPage() {
     const fetchUsers = async () => {
       try {
 
-        const res = await fetch('http://127.0.0.1:8000/api/visitors-exhibitors', {
+        const res = await fetch('https://tradesfairs.com/indtecexpo/api/visitors-exhibitors', {
           headers: {
             Accept: 'application/json',
             Authorization: `Bearer ${authToken}`,
@@ -52,7 +52,7 @@ export default function VisitorExhibitorPage() {
     Visitors: 'Visitor',
     Exhibitors: 'Exhibitor',
   };
-  
+
   const filteredUsers = activeTab === 'All'
     ? users
     : users.filter((user) => user.type === typeMap[activeTab]);
@@ -68,7 +68,7 @@ export default function VisitorExhibitorPage() {
 
   return (
     <>
-    <Sidebar/>
+      <Sidebar />
       <div className="ml-64 p-6">
         <h1 className="text-2xl font-semibold mb-6">Visitor & Exhibitor Management</h1>
 
